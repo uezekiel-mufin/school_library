@@ -95,7 +95,10 @@ To run the project, navigate to the correct directory path and execute the `Ruby
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- None at the moment.
+**Nameable Class**
+**Person class to Nameable**
+**Base Decorator**
+**CapitalizeDecorator and TrimmerDecorator**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
