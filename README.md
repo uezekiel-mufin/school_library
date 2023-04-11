@@ -48,6 +48,10 @@
 - **Person Class**
 - **Student Class**
 - **Teacher Class**
+- **Nameable Class**
+- **Person class to Nameable**
+- **Base Decorator**
+- **CapitalizeDecorator and TrimmerDecorator**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,10 +99,10 @@ To run the project, navigate to the correct directory path and execute the `Ruby
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-**Nameable Class**
-**Person class to Nameable**
-**Base Decorator**
-**CapitalizeDecorator and TrimmerDecorator**
+**Classroom Class**
+**Has Many relationship between c**
+**Class Rental**
+**Class Book**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
