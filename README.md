@@ -100,7 +100,7 @@ To run the project, navigate to the correct directory path and execute the `Ruby
 ## 🔭 Future Features <a name="future-features"></a>
 
 **Classroom Class**
-**Has Many relationship between c**
+**Has Many relationship between classroom and student**
 **Class Rental**
 **Class Book**
 
