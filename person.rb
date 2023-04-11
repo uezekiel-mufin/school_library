@@ -6,7 +6,7 @@ class Nameable
   end
 
   def correct_name
-    raise NotImplementedError, 'Subclass must implement correct_name method'
+    raise NotImplementedError, 'Kindly Implement correct_name method'
   end
 end
 
@@ -17,6 +17,7 @@ class Person < Nameable
     super(name)
 
     @name = name
+
     @age = age
   end
 
