@@ -12,6 +12,7 @@ end
 
 class Person < Nameable
   attr_accessor :name, :age
+  attr_reader :rental
 
   def initialize(age, name)
     super(name)
@@ -19,6 +20,7 @@ class Person < Nameable
     @name = name
 
     @age = age
+    @rental = []
   end
 
   def can_use_services?
