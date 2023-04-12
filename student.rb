@@ -4,8 +4,10 @@ class Student < Person
   attr_accessor :classroom
 
   def initialize(classroom)
-    super(age,name)
+    super(age, name)
     @classroom = classroom
+    @age = age
+    @name = name
   end
 
   def play_hooky
@@ -14,7 +16,6 @@ class Student < Person
 
   def add_classroom=(classroom)
     @classroom = classroom
-
     classroom.students.push(self) unless classroom.students.include?(self)
   end
 end

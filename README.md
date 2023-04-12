@@ -52,6 +52,10 @@
 - **Person class to Nameable**
 - **Base Decorator**
 - **CapitalizeDecorator and TrimmerDecorator**
+- **Classroom Class**
+- **Has Many relationship between classroom and student**
+- **Class Rental**
+- **Class Book**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,10 +103,12 @@ To run the project, navigate to the correct directory path and execute the `Ruby
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-**Classroom Class**
-**Has Many relationship between classroom and student**
-**Class Rental**
-**Class Book**
+**List all books**
+**List all people**
+**Create a person (teacher or student, not a plain Person).**
+**Create a book**
+**Create a rental**
+**List all rentals for a given person id**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

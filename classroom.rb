@@ -13,16 +13,7 @@ class Classroom
   end
 
   def add_student(student)
-    @students.push(student)
-
+    @students.push(student) unless @students.include?(student)
     student.classroom = self
   end
 end
-
-person1 = Person.new('james', 20)
-
-jss1 = Classroom.new('jss1')
-
-student1 = Student.new(jss1)
-
-puts student1.inspect
