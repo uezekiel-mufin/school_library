@@ -1,3 +1,5 @@
+require_relative 'rental'
+
 class Nameable
   attr_accessor :name
 
@@ -11,7 +13,7 @@ class Nameable
 end
 
 class Person < Nameable
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rental
 
   def initialize(age, name)
     super(name)
@@ -19,6 +21,8 @@ class Person < Nameable
     @name = name
 
     @age = age
+
+    @rental = []
   end
 
   def can_use_services?
@@ -35,6 +39,10 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  def add_rental(date, book)
+    Rental.new(date, book, self)
   end
 
   private
