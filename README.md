@@ -140,7 +140,7 @@ If you like this project then please do follow me and give a star to this repo.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks to everyone who showed their support and love.
+Thanks to Microverse for giving me the opportunity to embark on this project. I would also like to thank everyone who supported me in making this project a reality.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
