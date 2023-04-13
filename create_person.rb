@@ -1,4 +1,5 @@
 require_relative 'teacher'
+
 require_relative 'student'
 
 def create_person
@@ -18,7 +19,11 @@ def create_person
 
   person_type = gets.chomp.to_i
 
-  case person_type
+  person_switch(person_type, name, age, id)
+end
+
+def person_switch(choice, name, age, id)
+  case choice
 
   when 1
 
@@ -27,6 +32,7 @@ def create_person
     parent_permission = gets.chomp.downcase == 'y'
 
     print 'Enter classroom:'
+
     classroom = gets.chomp
 
     new_student = Student.new(id, age, name, classroom, parent_permission)

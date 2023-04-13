@@ -1,9 +1,6 @@
 require_relative 'book'
 
-
-
 def create_book
-
   print 'Enter book title:  '
 
   title = gets.chomp
@@ -17,6 +14,4 @@ def create_book
   @books << book
 
   puts "Book created: #{book.title} by #{book.author}"
-
 end
-
