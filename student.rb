@@ -1,13 +1,14 @@
 require_relative 'person'
 
 class Student < Person
-  attr_accessor :classroom
+  attr_accessor :classroom, :parent_permission
 
-  def initialize(classroom)
-    super(age, name)
+  def initialize(age, name, classroom, parent_permission)
+    super(name, age)
+
     @classroom = classroom
-    @age = age
-    @name = name
+
+    @parent_permission = parent_permission
   end
 
   def play_hooky
@@ -16,6 +17,7 @@ class Student < Person
 
   def add_classroom=(classroom)
     @classroom = classroom
+
     classroom.students.push(self) unless classroom.students.include?(self)
   end
 end

@@ -1,4 +1,5 @@
 require_relative 'student'
+
 require_relative 'person'
 
 class Classroom
@@ -14,6 +15,7 @@ class Classroom
 
   def add_student(student)
     @students.push(student) unless @students.include?(student)
+
     student.classroom = self
   end
 end

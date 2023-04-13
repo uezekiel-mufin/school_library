@@ -13,14 +13,18 @@ class Nameable
 end
 
 class Person < Nameable
-  attr_accessor :name, :age, :rental
+  attr_accessor :name, :rental, :age, :generated_id, :id
 
-  def initialize(age, name)
+  def initialize(name, age)
     super(name)
 
     @name = name
 
     @age = age
+
+    @generated_id = []
+
+    @id = generate_unique_number
 
     @rental = []
   end
@@ -43,6 +47,15 @@ class Person < Nameable
 
   def add_rental(date, book)
     Rental.new(date, book, self)
+  end
+
+  def generate_unique_number
+    number = rand(1..1000)
+    number = rand(1..1000) while @generated_id.include?(number)
+
+    @generated_id << number
+
+    number
   end
 
   private
@@ -79,15 +92,3 @@ class TrimmerDecorator < BaseDecorator
     end
   end
 end
-
-person = Person.new(22, 'maximilianus')
-
-puts person.correct_name
-
-capitalized_person = CapitalizeDecorator.new(person)
-
-puts capitalized_person.correct_name
-
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-
-puts capitalized_trimmed_person.correct_name
