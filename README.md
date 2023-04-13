@@ -91,6 +91,9 @@ Clone this repository to your desired folder:
 
 To run the project, navigate to the correct directory path and execute the `Ruby Filename` command on your terminal.
 
+- cd school_library
+- ruby main.rb
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -109,7 +112,8 @@ To run the project, navigate to the correct directory path and execute the `Ruby
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- None at the moment
+**Better UI Experience**
+**More Efficient Operations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
