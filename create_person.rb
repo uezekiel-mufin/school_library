@@ -3,26 +3,17 @@ require_relative 'teacher'
 require_relative 'student'
 
 def create_person
-  print 'Enter name:'
-
-  name = gets.chomp
-
-  print 'Enter age:'
-
-  age = gets.chomp
-
-  print 'Enter id:'
-
-  id = gets.chomp.to_i
-
   puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
 
   person_type = gets.chomp.to_i
-
-  person_switch(person_type, name, age, id)
+  print 'Enter name:'
+  name = gets.chomp
+  print 'Enter age:'
+  age = gets.chomp
+  person_switch(person_type, name, age)
 end
 
-def person_switch(choice, name, age, id)
+def person_switch(choice, name, age)
   case choice
 
   when 1
@@ -35,7 +26,7 @@ def person_switch(choice, name, age, id)
 
     classroom = gets.chomp
 
-    new_student = Student.new(id, age, name, classroom, parent_permission)
+    new_student = Student.new(age, name, classroom, parent_permission)
 
     @people << new_student
 
@@ -47,7 +38,7 @@ def person_switch(choice, name, age, id)
 
     specialization = gets.chomp
 
-    new_teacher = Teacher.new(id, age, name, specialization)
+    new_teacher = Teacher.new(age, name, specialization)
 
     @people << new_teacher
 
