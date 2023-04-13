@@ -13,7 +13,7 @@ class Nameable
 end
 
 class Person < Nameable
-  attr_accessor :name, :rental, :age, :id
+  attr_accessor :name, :rental, :age, :generated_id, :id
 
   def initialize(name, age)
     super(name)
@@ -22,11 +22,11 @@ class Person < Nameable
 
     @age = age
 
+    @generated_id = []
+
     @id = generate_unique_number
 
     @rental = []
-
-    @generated_id = []
   end
 
   def can_use_services?
@@ -51,10 +51,9 @@ class Person < Nameable
 
   def generate_unique_number
     number = rand(1..1000)
+    number = rand(1..1000) while @generated_id.include?(number)
 
-    number = rand(1..1000) while @generated_numbers.include?(number)
-
-    @generated_numbers << number
+    @generated_id << number
 
     number
   end
